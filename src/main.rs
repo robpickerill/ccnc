@@ -4,7 +4,7 @@ use std::sync::mpsc;
 use std::thread;
 
 fn main() {
-    let port = 8080; // Specify the port number to listen on
+    let port = 8080;
 
     let listener = TcpListener::bind(format!("127.0.0.1:{}", port)).unwrap();
     println!("Server listening on port {}", port);
